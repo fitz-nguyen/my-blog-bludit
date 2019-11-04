@@ -1,0 +1,10 @@
+version: "3.3"
+services:
+  blog-bludit:
+    image: bludit/docker:latest
+    container_name: blog-bludit
+    ports:
+        - "8000:80"
+    volumes:
+        - ./bludit:/usr/share/nginx/html/bl-content
+    restart: always
