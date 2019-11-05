@@ -6,5 +6,8 @@ services:
     ports:
         - "8000:80"
     volumes:
-        - ./bludit:/usr/share/nginx/html/bl-content
+        - ./bludit/bl-content:/usr/share/nginx/html/bl-content
+        - ./bludit/bl-themes:/usr/share/nginx/html/bl-themes
+        - ./bludit/bl-plugins:/usr/share/nginx/html/bl-plugins
+        - ./bludit/bl-languages:/usr/share/nginx/html/bl-languages
     restart: always
