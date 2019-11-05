@@ -8,5 +8,4 @@ services:
     volumes:
         - ./bludit/bl-content:/usr/share/nginx/html/bl-content
         - ./bludit/bl-themes:/usr/share/nginx/html/bl-themes
-        - ./bludit/bl-plugins:/usr/share/nginx/html/bl-plugins
     restart: always
